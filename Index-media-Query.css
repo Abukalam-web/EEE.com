@@ -1,0 +1,135 @@
+:root{
+    --orbiton: 'Orbitron', sans-serif;
+    --pechHater: 'Lobster Two', cursive;
+    --notofont:'Noto Serif Lao', serif;
+    --btncolor1: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    --btnShadow1 :  2px 3px 9px #00DBDE,
+                    -2px 3px 18px #21D4FD,
+                    -2px -3px 9px #21D4FD,
+                    2px -3px 36px #00DBDE ;
+    --btnBack : #1abc9c;
+
+
+
+
+
+}
+
+
+
+
+@media (max-width: 999px){
+    .navbar-item{
+        display: none;
+    }
+
+
+
+
+
+
+}
+
+/* for navbar folding */
+.material-symbols-outlined{
+    color: white;
+    font-size: 55px;
+    /* display: none; */
+    
+}
+#close{
+    display: none;
+}
+#fNav{
+display: none;
+}
+.folding-nav-menu{
+    position: absolute;
+    text-align: center;
+    right: 0px;
+    top: 60px;
+    width: 250px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: var(--btncolor1);
+
+}
+.folding-nav-menu a{
+    text-decoration: none;
+    color: white;
+    font-family:var(--orbiton) ;
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    padding: 5px 15px;
+    margin: 15px;
+    transition: all 230ms ease-in-out;
+}
+.folding-nav-menu a:hover{
+    
+    background-image: var(--btncolor1);
+}
+
+
+/* for navbar folding */
+@media (max-width: 600px){
+    
+.folding-nav-menu{
+    width: 100%;
+}
+.full-body{
+    display: none;
+}
+
+
+/* mobile display er css code likha shuru */
+.mobile-display{
+   
+    
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+
+}
+
+@media (max-width: 999px){
+    
+}
+@media (max-width: 999px){
+    
+}
+@media (max-width: 999px){
+    
+}
+@media (max-width: 999px){
+    
+}
+@media (max-width: 999px){
+    
+}
+@media (max-width: 999px){
+    
+}
+@media (max-width: 999px){
+    
+}
+@media (max-width: 999px){
+    
+}
+@media (max-width: 999px){
+    
+}
+
+@media (max-width: 999px){
+    
+}
+
+@media (max-width: 999px){
+    
+}

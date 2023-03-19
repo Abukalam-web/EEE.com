@@ -1,0 +1,580 @@
+/* for fonts */
+  @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Lao&display=swap');
+
+  ::-webkit-scrollbar{
+    width: 6px;
+    height: 40px;
+    
+  }
+  ::-webkit-scrollbar-thumb{
+    background-image: var(--btncolor1);
+    border-radius: 10px;
+  }
+
+
+:root{
+    --orbiton: 'Orbitron', sans-serif;
+    --pechHater: 'Lobster Two', cursive;
+    --notofont:'Noto Serif Lao', serif;
+    --btncolor1: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    --btnShadow1 :  2px 3px 9px #00DBDE,
+                    -2px 3px 18px #21D4FD,
+                    -2px -3px 9px #21D4FD,
+                    2px -3px 36px #00DBDE ;
+    --btnBack : #1abc9c;
+
+
+
+
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* for navbar section start*/
+@keyframes navBarBG1 {
+    0%{
+        background-color: #4158D0;
+        background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+
+    }
+    25%{
+        background-color: #00DBDE;
+        background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+        
+
+    }
+    50%{
+        background-color: #21D4FD;
+        background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+
+
+    }
+    75%{
+        background-color: #FA8BFF;
+        background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+        
+
+    }
+    100%{
+        background-color: #FF3CAC;
+        background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+
+
+    }
+    
+}
+
+@keyframes navColor1{
+    0%{
+        color: white;
+      
+    }
+    20%{
+        color: #B721FF;
+        
+    }
+    40%{
+        color: yellow;
+        font-family: var(--orbiton);
+        font-size: 14px;
+    }
+    60%{
+        color: #2BFF88;
+        
+    }
+    80%{
+        color: rgb(168, 160, 176);
+    }
+    100%{
+        color: white;
+      
+    }
+}
+.nav-bar-section{
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    width: 100%;
+    height: 60px;
+    transition: all 1s ease-in-out;
+    animation-name: navBarBG;
+    animation-duration: 16s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-between;
+}
+.logo-box{
+    display: flex;
+    flex-direction: row;
+}
+.logo-img img{
+    height: 55px;
+    width: 55px;
+    margin-left: 20px;
+}
+.logo-title p{
+    font-size: 37px;
+    color: white;
+    padding-left: 4px;
+    font-family: var(--orbiton);
+}
+
+
+.navbar-item ul{
+    display: flex;
+    flex-direction: row;
+}
+.navbar-item ul li{
+    list-style: none;
+    padding: 1px;
+    font-size: 19px;
+    color: white;
+    outline: none;
+}
+.navbar-item ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    padding: 3px 10px 5px 10px;
+    font-family: var(--notofont);
+    animation-name: navColor;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    color: yellow;
+    font-family: var(--orbiton);
+    font-size: 14px;
+    transition: all 300ms ease-in-out;
+}
+.navbar-item ul li a:hover{
+    border-bottom: 2.8px solid #2BFF88;
+    border-radius: 6px;
+    box-shadow: var(--btnShadow1);
+    background: var(--btnBack);
+    color: white;
+}
+.navbar-item{
+    padding: 12px 0px 0px 0px;
+}
+
+
+/* for navbar section end*/
+
+/* body section start */
+ .body-section{
+    background-image: url(./images/59a5702741e4e5f707ff8dc95d6adf1d.gif);
+    width: 100%;
+    height: 94vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px -200px;
+    
+ }
+
+ .body-column{
+    /* border: 1px solid red; */
+    width: 33.333%;
+    height: 560px;
+ }
+ .BC-1 p{
+    color: #ecf0f1;
+    font-size: 13px;
+    font-family: var(--notofont);
+    padding-top: 30px;
+    text-align: justify;
+    font-weight: 50;
+ }
+ #readMoreBtn{
+    color: #00DBDE;
+    font-family: var(--orbiton);
+    font-size: 10px;
+    outline: none;
+    border: none;
+    background:transparent;
+    padding:1px 5px;
+    border: 0.6px solid #1abc9c;
+    margin-left: 10px;
+    font-weight: 700;
+ }
+ #readMoreBtn:hover{
+    color: yellow;
+    font-size: 12px;
+    border: 0.6px solid #1abc9c;
+ }
+ #showLessBtn{
+    color: #00DBDE;
+    font-family: var(--orbiton);
+    font-size: 10px;
+    outline: none;
+    border: none;
+    background:transparent;
+    padding:1px 5px;
+    border: 0.6px solid #1abc9c;
+    margin-left: 10px;
+    font-weight: 700;
+ }
+ #showLessBtn:hover{
+    color: yellow;
+    font-size: 12px;
+    border: 0.6px solid #1abc9c;
+ }
+ .readmore{
+    display: none;
+ }
+
+ .BC-3 p {
+    color: white;
+    font-family: var(--notofont);
+    font-size: 13px;
+    margin-top: 300px;
+    padding-left: 14px;
+ }
+ .exploreBtn{
+    margin-left: 8px;
+ }
+ .exploreBtn button {
+    outline: none;
+    border: none;
+    margin: 5px;
+    padding: 6px 0px;
+    background: var(--btncolor1);
+    transition: all 500ms ease-in-out;
+ }
+ .exploreBtn button a{
+    color: white;
+    padding: 13px 25px;
+    font-size: 15px;
+    text-decoration: none;
+    font-family: var(--orbiton);
+ }
+ .exploreBtn button:hover{
+    box-shadow: 2px 3px 9px #00DBDE,
+                -2px 3px 18px #21D4FD,
+                -2px -3px 9px #21D4FD,
+                2px -3px 36px #00DBDE ;
+    background: #1abc9c;
+ }
+/* body section end */
+
+
+/* section 02 body start */
+.scetion-02-main-body{
+    width: 100%;
+    height: 100vh;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.sec-2-title{
+    color: yellow;
+    font-size: 32px;
+    font-family: var(--orbiton);
+    text-align: center;
+    padding: 20px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+
+.sec-2-c1, .sec-2-c2{
+    /* border: 1px solid red; */
+    width: 50%;
+    height: 500px;
+   
+}
+.sec-2-c1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    
+    
+}
+/* .box-for-chaiman-img{
+    width: 200px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+
+    
+} */
+.box-for-chaiman-img img{
+    border-radius: 50%;
+    /* margin-top: 50px; */
+    box-shadow: 1px 2px 5px #784BA0,1px -2px 5px #784BA0,-1px 2px 5px #784BA0,-1px -2px 5px #784BA0;
+}
+.sec-2-c1 p{
+    line-height: 0.75;
+}
+.techBtn1{
+    color: white;
+    padding: 6px 25px;
+    font-size: 15px;
+    text-decoration: none;
+    font-family: var(--orbiton);
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    background: var(--btncolor1);
+    letter-spacing: 2px;
+    transition: all 0.25s ease-in-out;
+}
+.techBtn1:hover{
+    box-shadow: 2px 3px 9px #00DBDE,
+    -2px 3px 18px #21D4FD,
+    -2px -3px 9px #21D4FD,
+    2px -3px 36px #00DBDE ;
+background: #1abc9c;
+transform: scale(1.1);
+}
+
+
+.T1, .T2, .T3 , .T4{
+    width: 50%;
+    height: 250px;
+    /* border: 1px solid red; */
+    line-height: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.T1 img, .T2 img, .T3 img , .T4 img{
+    width: 90px;
+    height: 110px;
+    border-radius: 50%;
+    box-shadow: 1px 2px 5px #784BA0,1px -2px 5px #784BA0,-1px 2px 5px #784BA0,-1px -2px 5px #784BA0;
+}
+.T1 .Tname,.T2 .Tname,.T3 .Tname,.T4 .Tname{
+    color: white;
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-top: 15px;
+    
+
+}
+.Tposition, .Tphone, .Temail {
+    color: lightgrey;
+    font-size: 15px;
+}
+.Tbutton{
+margin-top: 15px;
+}
+.Tbutton a{
+    color: white;
+    font-size: 12px;
+    font-family: var(--orbiton);
+    text-decoration: none;
+    letter-spacing: 2px;
+    padding: 6px 20px;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    background: var(--btncolor1);
+    transition: all 210ms ease-in-out;
+}
+.Tbutton a:hover{
+    box-shadow: 2px 3px 9px #00DBDE,
+    -2px 3px 18px #21D4FD,
+    -2px -3px 9px #21D4FD,
+    2px -3px 36px #00DBDE ;
+    background: #1abc9c;
+    font-size: 13px;
+}
+
+.all-T-info{
+    width: 100%;
+    height: 100vh;
+    background-color: #4158D0;
+    background-image: linear-gradient(135deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    
+
+
+}
+.T00{
+    width: 25%;
+    height: 250px;
+    /* border: 1px solid red; */
+    line-height: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.T00 .Tname {
+    color: white;
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-top: 15px;
+}
+.T00 img{
+    width: 90px;
+    height: 110px;
+    border-radius: 50%;
+    box-shadow: 1px 2px 5px #784BA0,1px -2px 5px #784BA0,-1px 2px 5px #784BA0,-1px -2px 5px #784BA0;
+}
+
+
+#allTeacherInfo{
+    display: none;
+}
+.TB22{
+    text-align: center;
+}
+/* section 02 body end */
+
+
+/* for section 03 e-payment */
+.e-payment-body{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./images/1f58d204278f70f30242c05329f161e7.gif);
+    background-repeat: repeat-x;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.e-pay-c{
+    width: 50%;
+    height: 400px;
+    /* border: 1px solid red; */
+   
+}
+
+
+.e-pay-c1-text{
+    color: lightblue;
+    font-size: 15px;
+    font-family: var(--notofont);
+    text-align: center;
+}
+
+.e-pay-login-body{
+    width: 60%;
+    height: 350px;
+    /* border: 1px solid red; */
+    margin-top: 16%;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    border-radius: 20px;
+    box-shadow: var(--btnShadow1);
+
+}
+.form-title{
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: var(--orbiton);
+    font-size: 14px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+.e-pay-input-1, .e-pay-input-2{
+    width: 90%;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    height: 37px;
+    margin-left: 15px;
+    padding-left: 20px;
+    color: grey;
+    
+}
+.e-pay-email h6 {
+    color: white;
+    text-transform: capitalize;
+    margin-left: 25px;
+    margin-top: 35px;
+    padding-bottom: 3px;
+}
+.e-pay-password h6{
+    color: white;
+    text-transform: capitalize;
+    margin-left: 25px;
+    padding: 5px 0px 3px 0px;
+}
+
+.e-pay-btn button{
+    color: white;
+    background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+
+    /* padding: 5px 16px; */
+    width: 130px;
+    margin-top: 20px;
+    font-size: 17px;
+    font-family: var(--orbiton);
+    letter-spacing: 2px;
+    padding: 5px 0px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    transition: all 300ms ease-in-out;
+}
+.e-pay-btn button:hover{
+    box-shadow: 2px 3px 9px #00DBDE,
+    -2px 3px 18px #21D4FD,
+    -2px -3px 9px #21D4FD,
+    2px -3px 36px #00DBDE ;
+    background: #1abc9c;
+    transform: scale(1.05);
+}
+
+.e-pay-btn1{
+    margin-left: 15px;
+}
+.e-pay-btn-divider{
+    color: lightgrey;
+}.e-pay-forgot-password {
+    text-align: center;
+    margin-top: 40px;
+}
+.e-pay-forgot-password span{
+    color: lightgrey;
+    font-size: 13px;
+    text-align: center;
+    
+    cursor: pointer;
+    padding: 5px 14px;
+
+}
+.e-pay-forgot-password span:hover{
+    box-shadow: var(--btnShadow1);
+    border-radius: 20px;
+}
+
+.box1111{
+    width: 70%;
+    height: 300px;
+    margin-top: 70px;
+}
+.payment-title{
+    color: yellow;
+    text-align: center;
+    font-size: 29px;
+    font-family: var(--orbiton);
+    font-weight: bold;
+    letter-spacing: 2.3px;
+}
+/* .e-pay-login-body{
+    display: none;
+
+} */
+/* end the section of e-payment */
+
