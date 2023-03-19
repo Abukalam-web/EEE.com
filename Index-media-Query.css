@@ -14,6 +14,9 @@
 
 
 }
+.nav-icon-fold{
+    display: none;
+}
 
 
 
@@ -21,6 +24,9 @@
 @media (max-width: 999px){
     .navbar-item{
         display: none;
+    }
+    .nav-icon-fold{
+        display: block;
     }
 
 
